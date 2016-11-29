@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		25F82C274FD2DF9B8D0E0A01 /* libPods-headerView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B33391038DC25A714A0A332 /* libPods-headerView.a */; };
 		48A8FEDF1DED69B800624E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FEDE1DED69B800624E73 /* main.m */; };
 		48A8FEE21DED69B800624E73 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FEE11DED69B800624E73 /* AppDelegate.m */; };
 		48A8FEEB1DED69B800624E73 /* headerView.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FEE91DED69B800624E73 /* headerView.xcdatamodeld */; };
@@ -16,9 +17,15 @@
 		48A8FF091DED734700624E73 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FF081DED734700624E73 /* TableViewController.m */; };
 		48A8FF0C1DED795B00624E73 /* HeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FF0B1DED795B00624E73 /* HeaderFooterView.m */; };
 		48A8FF0F1DED7B3200624E73 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FF0E1DED7B3200624E73 /* TableViewCell.m */; };
+		48A8FF1C1DED7FF800624E73 /* NSArray+HMAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FF131DED7FF800624E73 /* NSArray+HMAddition.m */; };
+		48A8FF1D1DED7FF800624E73 /* NSAttributedString+HMAdditon.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FF151DED7FF800624E73 /* NSAttributedString+HMAdditon.m */; };
+		48A8FF1E1DED7FF800624E73 /* NSObject+HMAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FF171DED7FF800624E73 /* NSObject+HMAddition.m */; };
+		48A8FF1F1DED7FF800624E73 /* UIColor+HMAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FF191DED7FF800624E73 /* UIColor+HMAddition.m */; };
+		48A8FF201DED7FF800624E73 /* UILabel+HMAddition.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FF1B1DED7FF800624E73 /* UILabel+HMAddition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02EB822F159BD35B3EAA7E2F /* Pods-headerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-headerView.release.xcconfig"; path = "Pods/Target Support Files/Pods-headerView/Pods-headerView.release.xcconfig"; sourceTree = "<group>"; };
 		48A8FEDA1DED69B800624E73 /* headerView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = headerView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		48A8FEDE1DED69B800624E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		48A8FEE01DED69B800624E73 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../AppDelegate.h; sourceTree = "<group>"; };
@@ -35,6 +42,19 @@
 		48A8FF0B1DED795B00624E73 /* HeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderFooterView.m; sourceTree = "<group>"; };
 		48A8FF0D1DED7B3200624E73 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
 		48A8FF0E1DED7B3200624E73 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		48A8FF111DED7FF800624E73 /* HMAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HMAdditions.h; sourceTree = "<group>"; };
+		48A8FF121DED7FF800624E73 /* NSArray+HMAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+HMAddition.h"; sourceTree = "<group>"; };
+		48A8FF131DED7FF800624E73 /* NSArray+HMAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+HMAddition.m"; sourceTree = "<group>"; };
+		48A8FF141DED7FF800624E73 /* NSAttributedString+HMAdditon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+HMAdditon.h"; sourceTree = "<group>"; };
+		48A8FF151DED7FF800624E73 /* NSAttributedString+HMAdditon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+HMAdditon.m"; sourceTree = "<group>"; };
+		48A8FF161DED7FF800624E73 /* NSObject+HMAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+HMAddition.h"; sourceTree = "<group>"; };
+		48A8FF171DED7FF800624E73 /* NSObject+HMAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+HMAddition.m"; sourceTree = "<group>"; };
+		48A8FF181DED7FF800624E73 /* UIColor+HMAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+HMAddition.h"; sourceTree = "<group>"; };
+		48A8FF191DED7FF800624E73 /* UIColor+HMAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+HMAddition.m"; sourceTree = "<group>"; };
+		48A8FF1A1DED7FF800624E73 /* UILabel+HMAddition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+HMAddition.h"; sourceTree = "<group>"; };
+		48A8FF1B1DED7FF800624E73 /* UILabel+HMAddition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+HMAddition.m"; sourceTree = "<group>"; };
+		6B33391038DC25A714A0A332 /* libPods-headerView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-headerView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		72D294ACBC0F1AEDB88111BA /* Pods-headerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-headerView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-headerView/Pods-headerView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				25F82C274FD2DF9B8D0E0A01 /* libPods-headerView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,6 +74,8 @@
 			children = (
 				48A8FEDC1DED69B800624E73 /* headerView */,
 				48A8FEDB1DED69B800624E73 /* Products */,
+				627409741C09160F76ACC338 /* Pods */,
+				59FDC489DDE2D02741D2923E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -88,6 +111,7 @@
 		48A8FEF71DED69E800624E73 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				48A8FF101DED7FF800624E73 /* Additions */,
 				48A8FEF81DED69E800624E73 /* Controller */,
 				48A8FEF91DED69E800624E73 /* Model */,
 				48A8FEFA1DED69E800624E73 /* View */,
@@ -126,6 +150,41 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		48A8FF101DED7FF800624E73 /* Additions */ = {
+			isa = PBXGroup;
+			children = (
+				48A8FF111DED7FF800624E73 /* HMAdditions.h */,
+				48A8FF121DED7FF800624E73 /* NSArray+HMAddition.h */,
+				48A8FF131DED7FF800624E73 /* NSArray+HMAddition.m */,
+				48A8FF141DED7FF800624E73 /* NSAttributedString+HMAdditon.h */,
+				48A8FF151DED7FF800624E73 /* NSAttributedString+HMAdditon.m */,
+				48A8FF161DED7FF800624E73 /* NSObject+HMAddition.h */,
+				48A8FF171DED7FF800624E73 /* NSObject+HMAddition.m */,
+				48A8FF181DED7FF800624E73 /* UIColor+HMAddition.h */,
+				48A8FF191DED7FF800624E73 /* UIColor+HMAddition.m */,
+				48A8FF1A1DED7FF800624E73 /* UILabel+HMAddition.h */,
+				48A8FF1B1DED7FF800624E73 /* UILabel+HMAddition.m */,
+			);
+			path = Additions;
+			sourceTree = "<group>";
+		};
+		59FDC489DDE2D02741D2923E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B33391038DC25A714A0A332 /* libPods-headerView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		627409741C09160F76ACC338 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72D294ACBC0F1AEDB88111BA /* Pods-headerView.debug.xcconfig */,
+				02EB822F159BD35B3EAA7E2F /* Pods-headerView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -133,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 48A8FEF41DED69B800624E73 /* Build configuration list for PBXNativeTarget "headerView" */;
 			buildPhases = (
+				B81F419A2176509180900292 /* [CP] Check Pods Manifest.lock */,
 				48A8FED61DED69B800624E73 /* Sources */,
 				48A8FED71DED69B800624E73 /* Frameworks */,
 				48A8FED81DED69B800624E73 /* Resources */,
+				7639D2DC6F5092E1FA192F04 /* [CP] Embed Pods Frameworks */,
+				E5C3252093AA488450658C68 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -192,6 +254,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7639D2DC6F5092E1FA192F04 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-headerView/Pods-headerView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B81F419A2176509180900292 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5C3252093AA488450658C68 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-headerView/Pods-headerView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		48A8FED61DED69B800624E73 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -200,9 +310,14 @@
 				48A8FF0F1DED7B3200624E73 /* TableViewCell.m in Sources */,
 				48A8FF061DED727D00624E73 /* MainController.m in Sources */,
 				48A8FEE21DED69B800624E73 /* AppDelegate.m in Sources */,
+				48A8FF1C1DED7FF800624E73 /* NSArray+HMAddition.m in Sources */,
+				48A8FF1E1DED7FF800624E73 /* NSObject+HMAddition.m in Sources */,
+				48A8FF201DED7FF800624E73 /* UILabel+HMAddition.m in Sources */,
 				48A8FEDF1DED69B800624E73 /* main.m in Sources */,
 				48A8FF091DED734700624E73 /* TableViewController.m in Sources */,
 				48A8FF0C1DED795B00624E73 /* HeaderFooterView.m in Sources */,
+				48A8FF1D1DED7FF800624E73 /* NSAttributedString+HMAdditon.m in Sources */,
+				48A8FF1F1DED7FF800624E73 /* UIColor+HMAddition.m in Sources */,
 				48A8FEEB1DED69B800624E73 /* headerView.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -311,6 +426,7 @@
 		};
 		48A8FEF51DED69B800624E73 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72D294ACBC0F1AEDB88111BA /* Pods-headerView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6WQHFB5TT9;
@@ -323,6 +439,7 @@
 		};
 		48A8FEF61DED69B800624E73 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02EB822F159BD35B3EAA7E2F /* Pods-headerView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6WQHFB5TT9;

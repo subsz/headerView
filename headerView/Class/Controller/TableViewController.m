@@ -12,7 +12,7 @@
 
 static NSString *cellID = @"cellID";
 
-@interface TableViewController ()
+@interface TableViewController () <UITableViewDataSource>
 
 @end
 
@@ -49,9 +49,9 @@ static NSString *cellID = @"cellID";
     
     
     //starImage
-    UIImage *starImg = [UIImage imageNamed:@"star-iOS"];
-    UIImageView *starV = [[UIImageView alloc]initWithImage:starImg];
-    [self.view addSubview:starV];
+//    UIImage *starImg = [UIImage imageNamed:@"star-iOS"];
+//    UIImageView *starV = [[UIImageView alloc]initWithImage:starImg];
+//    [self.view addSubview:starV];
     
     
     //创建UITableView
@@ -66,8 +66,11 @@ static NSString *cellID = @"cellID";
     [tb registerClass:[TableViewCell class] forCellReuseIdentifier:cellID];
     
     HeaderFooterView *headerV = [[HeaderFooterView alloc]initWithFrame:CGRectMake(0, 0, 0, 300)];
+    headerV.backgroundColor = [UIColor redColor];
     
     tb.tableHeaderView = headerV;
+    
+    [self.view addSubview:headerV];
     
     
 }
@@ -84,13 +87,13 @@ static NSString *cellID = @"cellID";
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+
+    return 2;
 }
 
 /*
