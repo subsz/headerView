@@ -14,6 +14,7 @@
 		48A8FEF01DED69B800624E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48A8FEEE1DED69B800624E73 /* LaunchScreen.storyboard */; };
 		48A8FF061DED727D00624E73 /* MainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FF051DED727D00624E73 /* MainController.m */; };
 		48A8FF091DED734700624E73 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FF081DED734700624E73 /* TableViewController.m */; };
+		48A8FF0C1DED795B00624E73 /* HeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 48A8FF0B1DED795B00624E73 /* HeaderFooterView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		48A8FF051DED727D00624E73 /* MainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainController.m; sourceTree = "<group>"; };
 		48A8FF071DED734700624E73 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		48A8FF081DED734700624E73 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		48A8FF0A1DED795B00624E73 /* HeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeaderFooterView.h; sourceTree = "<group>"; };
+		48A8FF0B1DED795B00624E73 /* HeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderFooterView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,8 @@
 				48A8FEE11DED69B800624E73 /* AppDelegate.m */,
 				48A8FF071DED734700624E73 /* TableViewController.h */,
 				48A8FF081DED734700624E73 /* TableViewController.m */,
+				48A8FF0A1DED795B00624E73 /* HeaderFooterView.h */,
+				48A8FF0B1DED795B00624E73 /* HeaderFooterView.m */,
 				48A8FF041DED727D00624E73 /* MainController.h */,
 				48A8FF051DED727D00624E73 /* MainController.m */,
 			);
@@ -191,6 +196,7 @@
 				48A8FEE21DED69B800624E73 /* AppDelegate.m in Sources */,
 				48A8FEDF1DED69B800624E73 /* main.m in Sources */,
 				48A8FF091DED734700624E73 /* TableViewController.m in Sources */,
+				48A8FF0C1DED795B00624E73 /* HeaderFooterView.m in Sources */,
 				48A8FEEB1DED69B800624E73 /* headerView.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +346,7 @@
 				48A8FEF61DED69B800624E73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

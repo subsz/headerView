@@ -50,12 +50,12 @@
     [self.view addSubview:starV];
     
     
+    
+    
+    
 }
 
--(void)setupHeader{
-    
-    
-}
+
 
 
 
