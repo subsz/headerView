@@ -21,21 +21,21 @@ static NSString *cellID = @"cellID";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
     [self setupUI];
 }
 
 -(void)setupUI
 {
     //左边按钮
-    UIBarButtonItem *back = [[UIBarButtonItem alloc]initWithTitle:@"Tinker" style:UIBarButtonItemStylePlain target:nil action:nil];
-    UIBarButtonItem *img = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"back-iOS"] style:UIBarButtonItemStylePlain target:nil action:nil];
-    self.navigationItem.leftBarButtonItems = @[img,back];
+    UIButton *leftBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    [leftBtn setImage:[UIImage imageNamed:@"back-iOS"] forState:UIControlStateNormal];
+    [leftBtn setTitle:@"Tinker" forState:UIControlStateNormal];
+    [leftBtn setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
+//    UIBarButtonItem *back = [[UIBarButtonItem alloc]initWithTitle:@"Tinker" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [leftBtn sizeToFit];
+    UIBarButtonItem *img = [[UIBarButtonItem alloc]initWithCustomView:leftBtn];
+    self.navigationItem.leftBarButtonItem = img;
+    
     
     
     
@@ -48,43 +48,33 @@ static NSString *cellID = @"cellID";
     [self.view addSubview:detail];
     
     
-    //starImage
+//    starImage
 //    UIImage *starImg = [UIImage imageNamed:@"star-iOS"];
 //    UIImageView *starV = [[UIImageView alloc]initWithImage:starImg];
 //    [self.view addSubview:starV];
     
     
     //创建UITableView
-    UITableView *tb = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
+   
     
     //添加数据源对象
-    tb.dataSource = self;
     
-    tb.estimatedRowHeight = 200;
-    tb.rowHeight = UITableViewAutomaticDimension;
+
+    [self.tableView registerClass:[TableViewCell class] forCellReuseIdentifier:cellID];
     
-    [tb registerClass:[TableViewCell class] forCellReuseIdentifier:cellID];
-    
-    HeaderFooterView *headerV = [[HeaderFooterView alloc]initWithFrame:CGRectMake(0, 0, 0, 300)];
-    headerV.backgroundColor = [UIColor redColor];
-    
-    tb.tableHeaderView = headerV;
+    HeaderFooterView *headerV = [[HeaderFooterView alloc]initWithFrame:CGRectMake(0, 0, 375, 300)];
+    headerV.backgroundColor = [UIColor grayColor];
     
     [self.view addSubview:headerV];
     
+
+    
     
 }
 
 
 
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
+#pragma mark - 数据源方法
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
@@ -96,58 +86,15 @@ static NSString *cellID = @"cellID";
     return 2;
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-    // Configure the cell...
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
     
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
